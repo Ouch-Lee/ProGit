@@ -1,0 +1,18 @@
+一、本地git的操作
+1.git status :查看当前git仓库的状态；
+2.git init: 将当前目录作为新的仓库
+3.git add：将需要上传的文件上传到缓冲区
+4.git commit:将缓冲区的文件上传到github;
+	-m “” 可以添加备注，最好添加备注；
+5.git branch ,查看当前的分支，
+	git branch <name>创建一个新的分支
+	git branch -d <name>删除这个分支
+6.git checkout -<name>切换到这分支
+7.git merge: <name>将这个分支和目前分支合并
+8.git tag:为分支贴上标签；
+
+二、连接本地git和GitHub
+1.生成ssh: “ssh-keygen -t rsa”命令在.ssh下生成钥匙
+2.添加ssh key：在setting中add shh，复制.shh／id_rsa.pub的内容到ssh中
+3.check是否成功连接commond: “ssh -T git@github.com”
+
